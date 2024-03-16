@@ -1,4 +1,5 @@
 import './App.css';
+import {Link} from "react-router-dom";
 
 function Tyt() {
     return (<div>
@@ -6,11 +7,22 @@ function Tyt() {
                 <a href=''>
                 <img className='Av-logo' src='https://autobuy.by/favicon.svg'/></a>
                 <img className='Av-name' src='https://autobuy.by/autobuy_logo.svg'/>
-                <img className='Av-bell' src='https://autobuy.by/images/notice/color/header_not.svg'/>
-                <p>Уведомления</p>
+                    <div className='ring'>
+                        <div className='one'>
+
+                    <img className='Av-bell' src='https://autobuy.by/images/notice/color/header_not.svg' />
+                            <div className='one_bell'>
+                        <span>1</span>
+                            </div>
+                        </div>
+                    <p>Уведомления</p>
+                    </div>
                 <div>
-                    <button className='Av-but-reg'>Войти</button>
-                    <button className='Av-but-buy'>Продать</button>
+                    <Link to='autorisation/'>
+                    <button className='Av-but-reg' >Войти</button></Link>
+                    <Link to='addcar/'>
+                    <button className='Av-but-buy'>Продать</button></Link>
+
                 </div>
 
 

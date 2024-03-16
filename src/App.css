@@ -2,15 +2,11 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 .Av-header {
   background-color: white;
@@ -18,6 +14,35 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.Av-content-head {
+  margin-left: 17px;
+}
+
+.city {
+  margin-left: 17px;
+}
+
+.city_ad {
+  margin-top: 70px;
+}
+.Av-header-line {
+  background-color: white;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.Av-header-line a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+.Av-header-line a:hover {
+  color: #1967d2;
 }
 .Av-logo {
   width: 25px;
@@ -27,13 +52,36 @@
 .Av-bell {
     width: 25px;
   height: 25px;
-  margin-left: 50%;
+  margin-left: 40%;
+  margin-top: 20%;
 }
 .Av-name {
   height: 25px;
   margin: 10px;
 }
 
+.ring{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+}
+.one {
+  display: flex;
+  flex-direction: row;
+}
+
+.one_bell {
+  margin-top: 15px;
+  margin-left: -10px;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  text-align: center;
+  font-size: 11px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
 .line {
   color: rgb(240,240,240);
   width: 100%;
@@ -57,12 +105,26 @@
   color: white;
   font-size: 17px;
 }
-
+.city_region {
+  position: absolute;
+  right: 320px;
+  top: 230px;
+  height: 30px;
+  width: 150px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
 .filter {
   background-color: white;
-  width: 70%;
+
   height: 90%;
   align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .filter select {
@@ -102,23 +164,129 @@
   font-size: 20px;
   align-items: center;
 }
+.ad {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
 
-.Av-content-body {
-  background-color: #f2f4f6;
-  margin-left: 10px;
-  display: grid;
+  font-size: 14px;
+  font-family: Ubuntu;
+}
+.close {
+  border-radius: 10px;
+  background: white;
+  margin-left: 90%;
+}
+.price_byn {
+  color: #1967d2;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: 'Inter',sans-serif;
+  margin: 10px;
+  margin-left: 20%;
+
+}
+.vin {
+  color: #4caf50;
+  background: #4caf502e;
+  border-radius: 7px;
   align-items: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.data_car {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 40%;
+}
+.data_car a {
+  text-decoration: none;
+  color: black;
 }
 
+.data_car a:hover {
+  color: #1967d2;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.img_main {
+  width: 779px;
+  height: 513px;
+  border-radius: 10px;
+  background-size: cover;
+}
+.img_ad {
+  width: 220px;
+  height: 165px;
+  border-radius: 5px;
+  margin: 20px;
+  object-fit: cover;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+
+}
+.img_min {
+  width: 79px;
+  height: 53px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.img_car {
+  width: 85%;
+  height: 100%;
+  border-radius: 10px;
+}
+.Av-content-body {
+  background-color: #d5e4f35c;
+  margin-left: 10px;
+  display: grid;
+  direction: initial;
+  align-items: center;
+}
+.lin{
+  display: flex;
+  flex-direction: row;
+}
+.mark_sq {
+  display: flex;
+  flex-direction: initial;
+  align-items: flex-start;
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.mark {
+margin: 10px;
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car_param{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+.car_param_name {
+  margin-right: 20px;
+  text-align: left;
+}
+
+.button_phone {
+  background: #1967d2;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  align-items: center;
+  height: 41px;
+  width: 70%;
 }
